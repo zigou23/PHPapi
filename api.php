@@ -24,5 +24,10 @@ fclose($fh);
  
 // 随机获取一行索引
 $result = $data[array_rand($data)];
- 
-echo $result;
+
+//直接输出结果
+//echo $result; 
+
+//网页直接js调用，参考 https://www.17kafei.net/archives/14/ 
+//方式 <script src="http://你的网址/api.php"></script>
+echo 'document.write("'.htmlspecialchars($result).'");';
