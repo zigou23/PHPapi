@@ -26,8 +26,8 @@ fclose($fh);
 $result = $data[array_rand($data)];
 
 //直接输出结果
-//echo $result; 
+echo $result; 
 
 //网页直接js调用，参考 https://www.17kafei.net/archives/14/ 
 //方式 <script src="http://你的网址/api.php"></script>
-echo 'document.write("'.htmlspecialchars($result).'");';
+//echo 'document.write("'.htmlspecialchars($result).'");';
