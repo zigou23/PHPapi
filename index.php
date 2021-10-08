@@ -1,1 +1,1 @@
-<?php header( 'Location: /api.php' ) ; ?>
+<?php header( 'Location: https://qsim.top/api' ) ; ?>
