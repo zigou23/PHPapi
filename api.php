@@ -31,4 +31,8 @@ $result = $data[array_rand($data)];
 //网页直接js调用，参考 https://www.17kafei.net/archives/14/ 
 //方式 <script src="http://你的网址/api.php"></script>
 //echo 'document.write("'.htmlspecialchars($result).'");';
-echo '(function zigouapi(){var zigouapi="'.htmlspecialchars($result).'";var dom=document.querySelector('#zigouapi');Array.isArray(dom)?dom[0].innerText=zigouapi:dom.innerText=zigouapi;})()';
+
+
+echo "<script  type='text/javascript'>
+(function zigouapi(){var zigouapi="'.htmlspecialchars($result).'";var dom=document.querySelector('#zigouapi');Array.isArray(dom)?dom[0].innerText=zigouapi:dom.innerText=zigouapi;})()
+</script>"
