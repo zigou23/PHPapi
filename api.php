@@ -25,15 +25,9 @@ if (isset($_GET['charset']) && !empty($_GET['charset'])) {
 
 if ($_GET['encode'] === 'js') {
     echo "function zigouapi1(){document.write('" . $content ."');}";
-} else {
-    echo $content;
-}
-
-
-if ($_GET['encode'] === 'js2') {
+} else if ($_GET['encode'] === 'js2'){
     echo "(function zigouapi1(){var zigouapi1='" . $content ."';var dom=document.querySelector('#zigouapi1');Array.isArray(dom)?dom[0].innerText=zigouapi1:dom.innerText=zigouapi1;})()";
 } else {
     echo $content;
 }
 
-//(function hitokoto(){var hitokoto="我在最没有能力的年纪，遇见了最想照顾一生的人。";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()
