@@ -33,4 +33,4 @@ $result = $data[array_rand($data)];
 echo 'document.write("'.htmlspecialchars($result).'");';
 
 
-//echo "<script  type='text/javascript'>(function zigouapi(){var zigouapi="'.htmlspecialchars($result).'";var dom=document.querySelector('#zigouapi');Array.isArray(dom)?dom[0].innerText=zigouapi:dom.innerText=zigouapi;})()</script>"
+//echo '(function zigouapi(){var zigouapi="'.htmlspecialchars($result).'";var dom=document.querySelector("#zigouapi");Array.isArray(dom)?dom[0].innerText=zigouapi:dom.innerText=zigouapi;})()</script>'
