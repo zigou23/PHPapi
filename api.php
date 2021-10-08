@@ -23,11 +23,11 @@ if (isset($_GET['charset']) && !empty($_GET['charset'])) {
     $charset = 'utf-8';
 }
 
-//if ($_GET['encode'] === 'js') {
-//    echo "function zigouapi1(){document.write('" . $content ."');}";
-//} else {
-//    echo $content;
-//}
+if ($_GET['encode'] === 'js') {
+    echo "function zigouapi1(){document.write('" . $content ."');}";
+} else {
+    echo $content;
+}
 
 
 if ($_GET['encode'] === 'js2') {
