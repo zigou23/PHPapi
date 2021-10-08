@@ -24,7 +24,7 @@ if (isset($_GET['charset']) && !empty($_GET['charset'])) {
 }
 
 if ($_GET['encode'] === 'js') {
-    echo "function hitokoto(){document.write('" . $content ."');}";
+    echo "function zigouapi1(){document.write('" . $content ."');}";
 } else {
     echo $content;
 }
