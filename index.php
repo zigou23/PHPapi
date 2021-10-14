@@ -1,1 +1,1 @@
-<?php header( 'Location: https://qsim.top/api' ) ; ?>
+<?php header( 'Location: https://github.com/zigou23/PHPapi#readme' ) ; ?>
