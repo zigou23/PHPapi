@@ -8,7 +8,7 @@ https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 
   - https://zigou-api.herokuapp.com  heroku服务器，部分运营商无法访问
 
-  - https://api.qsim.top cf workers限次，您可以自己组件[workers](#cf workers接入)
+  - https://api.qsim.top cf workers限次，您可以自己组件[workers](#cf-workers接入)
 
 | 属性         | 解释                                           | 返回值                                                       |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------ |
@@ -38,7 +38,6 @@ addEventListener('fetch', event => {
   event.respondWith(fetch(request));
 });
 ```
-
 
 
 本页 `api.php` 参考[来源](https://blog.imvann.com/6.html)
