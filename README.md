@@ -4,8 +4,16 @@ test
 
 [参考](https://blog.imvann.com/6.html)
 
-[链接1](https://zigou-api.herokuapp.com)  
-[链接2](https://api.qsim.top)
+[链接1](https://zigou-api.herokuapp.com)  heroku服务器，部分运营商无法访问
+[链接2](https://api.qsim.top) cf workers限次，您可以自己组件workers
+``` cf workers
+addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+  url.hostname = 'zigou-api.herokuapp.com';
+  const request = new Request(url, event.request);
+  event.respondWith(fetch(request));
+});
+```
 ```
 `type`：指定文本库文件名，无参数时默认为'hitokoto.txt'
 `encode`：赋值为'js'时返回js代码，否则返回文本
