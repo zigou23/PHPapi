@@ -16,12 +16,13 @@ test
 ```
 
 html接入
-1.encode=js
+
+1. encode=js
 ```
 <script type="text/javascript" src="https://api.qsim.top/api.php?encode=js"></script>
 <p class="content"><script>zigouapi1()</script></p>
 ```
-2.encode=js2 api加载不影响页面
+2. encode=js2 api加载不影响页面
 ```
 <span id="zigouapi1">:D 一言获取中...</span>
 <script src="https://api.qsim.top/api.php?encode=js2" defer></script>
