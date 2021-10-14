@@ -7,9 +7,9 @@ https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 `your-domain`: 
 
   - https://zigou-api.herokuapp.com  heroku服务器，部分运营商无法访问
-  - 
+
   - https://api.qsim.top cf workers限次，您可以自己组件workers
-  - 
+
   - - ``` cf workers
 addEventListener('fetch', event => {
   const url = new URL(event.request.url);
