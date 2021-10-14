@@ -41,4 +41,4 @@ addEventListener('fetch', event => {
 
 > 注：我的网站由无服务器构成，所以均较慢
 
-本页 `api.php` 参考[来源](https://blog.imvann.com/6.html)
+本页 `api.php` 参考[来源](https://blog.imvann.com/6.html) 部分语录参考自[名言通](https://www.mingyantong.com/)
