@@ -10,7 +10,7 @@ https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 
   - https://api.qsim.top cf workers限次，您可以自己组件workers
 
-  - - ``` cf workers
+     - ``` cf workers
 addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   url.hostname = 'zigou-api.herokuapp.com';
