@@ -12,7 +12,7 @@ https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 
 | 属性         | 解释                                           | 返回值                                                       |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------ |
-| `type`       | 指定文本库文件名，无参数时默认为'hitokoto.txt' | ---                                                          |
+| `type`       | 指定文本库文件名，无参数时默认为'hitokoto.txt' | `内容`                                                        |
 | `encode=js`  | 赋值为'js'时返回js代码，否则返回文本           | function zigouapi1(){document.write('`内容`');}              |
 | `encode=js2` | 赋值为'js2'时返回js代码，否则返回文本          | (function zigouapi1(){var zigouapi1='`内容`';var dom=document.querySelector('#zigouapi1');Array.isArray(dom)?dom[0].innerText=zigouapi1:dom.innerText=zigouapi1;})() |
 
