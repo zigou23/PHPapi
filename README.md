@@ -1,14 +1,16 @@
 # PHP api 人生语录
 
-test
+### 接口地址
 
-[参考](https://blog.imvann.com/6.html)
+https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 
-[链接1](https://zigou-api.herokuapp.com)  heroku服务器，部分运营商无法访问
+`your-domain`: 
 
-[链接2](https://api.qsim.top) cf workers限次，您可以自己组件workers
-
-``` cf workers
+  - https://zigou-api.herokuapp.com  heroku服务器，部分运营商无法访问
+  - 
+  - https://api.qsim.top cf workers限次，您可以自己组件workers
+  - 
+  - - ``` cf workers
 addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   url.hostname = 'zigou-api.herokuapp.com';
@@ -16,10 +18,6 @@ addEventListener('fetch', event => {
   event.respondWith(fetch(request));
 });
 ```
-
-### 接口地址
-
-https: //`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
 
 | 属性         | 解释                                           | 返回值                                                       |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------ |
@@ -31,12 +29,13 @@ html接入
 
 1. encode=js
 ```
-<script type="text/javascript" src="https://api.qsim.top/api.php?encode=js"></script>
+<script type="text/javascript" src="https://`your-domain`/api.php?encode=js"></script>
 <p class="content"><script>zigouapi1()</script></p>
 ```
 2. encode=js2 api加载不影响页面
 ```
-<span id="zigouapi1">:D 一言获取中...</span>
-<script src="https://api.qsim.top/api.php?encode=js2" defer></script>
+<span id="zigouapi1">:D 语录获取中...</span>
+<script src="https://`your-domain`/api.php?encode=js2" defer></script>
 ```
 
+本页 `api.php` 参考[来源](https://blog.imvann.com/6.html)
