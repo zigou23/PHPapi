@@ -1,5 +1,8 @@
 # PHP api
 
+> Tips: This is a private learning warehouse, you can use it freely according to the rules of [LICENSE](/blob/main/LICENSE)
+
+
 ### 地址
 
 https://zigou-api.herokuapp.com/api.php
