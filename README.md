@@ -10,7 +10,7 @@ https://zigou-api.herokuapp.com/img/bing/daily/index.php
 
 ### 接口地址
 
-https://`your-domain`/api.php?*type*=hitokoto.txt&*encode*=js
+https://`your-domain`/xxx.php
 
 `your-domain`: 
 
@@ -31,4 +31,4 @@ addEventListener('fetch', event => {
 
 > 注：我的网站由无服务器构成，所以均较慢
 
-本页 `api.php` 参考[来源](https://blog.imvann.com/6.html) 部分语录参考自[名言通](https://www.mingyantong.com/)
+<small>由于本人未学习PHP,内容均为网络,如有问题,plz tell me</small>
