@@ -1,6 +1,6 @@
 # PHP api
 
-> Tips: This is a private learning warehouse, you can use it freely according to the rules of [LICENSE](/blob/main/LICENSE)
+> Tips: This is a private learning warehouse, you can use it freely according to the rules of [LICENSE](/LICENSE)
 
 
 ### 地址
