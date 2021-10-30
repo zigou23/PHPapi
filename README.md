@@ -31,4 +31,4 @@ addEventListener('fetch', event => {
 
 > 注：我的网站由无服务器构成，所以均较慢
 
-<small>由于本人未学习PHP,内容均为网络,如有问题,plz tell me</small>
+`由于本人未学习PHP,内容均为网络,如有问题,plz tell me`
