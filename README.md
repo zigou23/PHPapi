@@ -32,6 +32,6 @@ addEventListener('fetch', event => {
 });
 ```
 
-> 注：我的网站由无服务器构成，所以均较慢
+> 注：我的网站由无服务器构成，所以均较慢 如果hitokoto.txt里有不好的语句，欢迎[联系我](https://www.qsim.top)
 
 `由于本人未学习PHP,内容均为网络,如有问题,plz tell me`
