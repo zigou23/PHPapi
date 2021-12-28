@@ -68,10 +68,10 @@ class API{
         "rememberLogin"=>"true");
         return $this->curl($url,$this->prepare($data),true);
     }
-    public function follow(){
-        $url="https://music.163.com/weapi/user/follow/1833949577";
-        return '{"code":'.json_decode($this->curl($url,$this->prepare(array('csrf_token'=>$_COOKIE["__csrf"]))),1)["code"].'}';
-    }
+//     public function follow(){
+//         $url="https://music.163.com/weapi/user/follow/1833949577";
+//         return '{"code":'.json_decode($this->curl($url,$this->prepare(array('csrf_token'=>$_COOKIE["__csrf"]))),1)["code"].'}';
+//     }
     public function recommend(){
         $url="https://music.163.com/weapi/v1/discovery/recommend/resource";
         $json = json_decode($this->curl($url,$this->prepare(array('csrf_token'=>$_COOKIE["__csrf"]))), 1);
