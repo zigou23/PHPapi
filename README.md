@@ -3,9 +3,11 @@
 > Tips: This is a private learning warehouse, you can use it according to the rules of [LICENSE](/LICENSE).
 
 
-### 地址
+## API
 
 自己的语录接口：https://zigou-api.herokuapp.com/hitokoto/index.php
+
+- [参数](/hitokoto/readme.md)
 
 Bing每日一图：
 
@@ -18,7 +20,7 @@ Bing每日一图：
   
   - 一样(注：此链接走heroku服务器,不建议使用
 
-### 接口地址
+## 接口地址
 
 https://`your-domain`/xxx.php
 
@@ -29,7 +31,7 @@ https://`your-domain`/xxx.php
   - https://api.qsim.top cf workers限次，您可以自己组件[workers](#cf-workers接入)
 
 
-### cf workers接入
+## cf workers接入
 ``` js
 addEventListener('fetch', event => {
   const url = new URL(event.request.url);
