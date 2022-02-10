@@ -5,11 +5,16 @@
 
 ### 地址
 
-https://zigou-api.herokuapp.com/api.php
+自己的语录接口：https://zigou-api.herokuapp.com/hitokoto/index.php
 
-https://zigou-api.herokuapp.com/img/bing/daily/index.php
+Bing每日一图：
 
+- 302跳转 https://zigou-api.herokuapp.com/img/bing/index.php
+  - 随机图 ?random=1
+  - 指定图 ?value=(1-7) (注：默认value=0(~~知道有bug~~)
 
+- 不会跳转 https://zigou-api.herokuapp.com/img/bing/2k.php
+  - 一样(注：此链接走heroku服务器,不建议使用
 
 ### 接口地址
 
