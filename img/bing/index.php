@@ -8,11 +8,24 @@ if ($_GET['random'] === '1') {
     // echo "$arr";
 }
 
+// 参数值(0-7)，获取链接的第几个url
 $value = $_GET['value'];
 if ($value >= 1 && $value <= 7) {
     $arr = $value ;
 }
 
-$imgurl = 'https://www.bing.com'.$str['images'][$arr]['url'];
-header("Location: {$imgurl}");
+// 输出走不走服务器，测试中
+if ($_GET['server'] === '1') {
+    header('Content-Type: image/JPEG');
+    @ob_end_clean();
+    @readfile($imgurl);
+    @flush();
+    @ob_flush();
+    exit();
+}else{
+    $imgurl = 'https://www.bing.com'.$str['images'][$arr]['url'];
+    header("Location: {$imgurl}");
+}
+
+
 ?>
