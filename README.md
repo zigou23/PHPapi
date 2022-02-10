@@ -12,9 +12,10 @@ Bing每日一图：
 - 302跳转 https://zigou-api.herokuapp.com/img/bing/index.php
   - 随机图 ?random=1
   - 指定图 ?value=(1-7) (注：默认value=0(~~知道有bug~~)
-- 走服务器 ?server=1 (Notice:不建议使用
   
+  - 走服务器 ?server=1 (Notice:不建议使用
 - 不会跳转 https://zigou-api.herokuapp.com/img/bing/2k.php
+  
   - 一样(注：此链接走heroku服务器,不建议使用
 
 ### 接口地址

@@ -14,7 +14,9 @@ if ($value >= 1 && $value <= 7) {
     $arr = $value ;
 }
 
-// 输出走不走服务器，测试中
+$imgurl = 'https://www.bing.com'.$str['images'][$arr]['url'];
+
+// 输出走不走服务器,不建议使用
 if ($_GET['server'] === '1') {
     header('Content-Type: image/JPEG');
     @ob_end_clean();
@@ -23,9 +25,6 @@ if ($_GET['server'] === '1') {
     @ob_flush();
     exit();
 }else{
-    $imgurl = 'https://www.bing.com'.$str['images'][$arr]['url'];
     header("Location: {$imgurl}");
 }
-
-
 ?>
